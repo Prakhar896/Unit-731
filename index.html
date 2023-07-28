@@ -10,6 +10,9 @@
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
+            margin-bottom: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         @keyframes fadeInWithTranslation {
@@ -26,6 +29,9 @@
         #introJumbotron {
             background-image: url('img/unit731complex.jpeg');
             background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            margin-top: 30px;
         }
 
         #pageTitle {
@@ -45,25 +51,83 @@
             animation: fadeInWithTranslation 3s;
             position: relative;
         }
+
+        #content {
+            font-size: larger;
+            padding-bottom: 150px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        #viewerAdvisoryAlert {
+            text-align: center;
+            font-size: smaller;
+        }
+
+        .bolded {
+            font-weight: bold;
+        }
+
+        ol {
+            list-style: inside;
+        }
+
+        .bigger {
+            font-size: large;
+        }
+
+        #continueButtonDiv {
+            text-align: center;
+        }
+
+        #continueButton {
+            padding: 10px;
+        }
     </style>
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <div class="p-5 mb-5 text-white" id="introJumbotron">
         <h1 id="pageTitle" class="jumbotronContent">Unit 731</h1>
         <p id="hookStatement" class="jumbotronContent">The most traumatising act of human experimentation in history</p>
     </div>
 
-    <br><br>
+    <br>
 
+    <div id="content">
+        <div class="alert alert-warning" id="viewerAdvisoryAlert" role="alert">
+            <span>This informative website may contain textual and graphical content that may be disturbing to some viewers. Please continue at your own discretion.</span>
+        </div>
+        <br>
+        <h1>Prologue</h1>
+        <p>During World War II, the Imperial Japanese Army set-up <span class="bolded">a covert biological and chemical warfare research and development (R&D) unit</span> in Manchuria.</p>
+        <p>
+            It was also involved in <span class="bolded">lethal human experimentation and the manufacture of biological weapons.</span> 
+            As such, it is responsible for the most notorious war crimes committed by the Japanese armed forces.
+        </p>
+        <p>An estimated <span class="bolded">200 to 300 thousand people were killed</span> as a result of the unit's activites, and no one came out alive.</p>
+        <br>
+        <p>Some of the dehumanizing experiments conducted by people include:</p>
+        <ol>
+            <li>Disease injections</li>
+            <li>Controlled Dehydration</li>
+            <li>Bio-weapons Testing</li>
+            <li>Vivisection</li>
+            <li style="list-style-type: none; padding-top: 5px;">&nbsp;&nbsp;&nbsp;and much much more...</li>
+        </ol>
+        <br>
+        <p>You will be surprised to find out about the double-edged outcome of the activities conducted by Unit 731.<br>Allow me to take you on a journey through the different stages of the unit and through the horrific activities that took place.</p>
+        <br>
+        <br>
+        <div id="continueButtonDiv">
+            <a href="chapter2.html">
+                <button type="button" id="continueButton" class="btn btn-outline-primary bigger">Continue to <span class="bolded">Zhongma Fortress</span></button>
+            </a>
+        </div>
+    </div>
 
-    <h3>Prologue</h3>
-    <p>Hello world!</p>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <script src="js/copyright.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 

@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home & Prologue | Unit 731</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            /* set background image to apple.png
-            background-image: url("images/apple.png"); */
+            text-align: center;
+        }
+
+        @keyframes fadeInWithTranslation {
+            from {
+                top: 25px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
         }
 
         #introJumbotron {
@@ -20,22 +29,38 @@
         }
 
         #pageTitle {
-            font-size: 3rem;
             font-weight: 900;
+            font-size: 7em;
+            padding-top: 10%
+        }
+
+        #hookStatement {
+            font-size: 2em;
+            padding-bottom: 10%
         }
 
         .jumbotronContent {
             text-shadow: 2px 2px 4px #000000;
             opacity: 1;
+            animation: fadeInWithTranslation 3s;
+            position: relative;
         }
     </style>
 </head>
 
 <body>
-    <div class="p-5 text-center mb-5 text-white" id="introJumbotron">
+    <div class="p-5 mb-5 text-white" id="introJumbotron">
         <h1 id="pageTitle" class="jumbotronContent">Unit 731</h1>
         <p id="hookStatement" class="jumbotronContent">The most traumatising act of human experimentation in history</p>
     </div>
+
+    <br><br>
+
+
+    <h3>Prologue</h3>
+    <p>Hello world!</p>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

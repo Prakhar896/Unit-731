@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home & Prologue | Unit 731</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
             margin-bottom: 100px;
-            margin-right: 20px;
-            margin-left: 20px;
         }
 
         @keyframes fadeInWithTranslation {
@@ -20,6 +19,7 @@
                 top: 25px;
                 opacity: 0;
             }
+
             to {
                 top: 0px;
                 opacity: 1;
@@ -32,6 +32,8 @@
             background-position: center;
             border-radius: 30px;
             margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         #pageTitle {
@@ -56,7 +58,7 @@
             font-size: larger;
             padding-bottom: 150px;
             text-align: left;
-            margin: 10px;
+            margin: 20px;
         }
 
         #viewerAdvisoryAlert {
@@ -87,6 +89,40 @@
 </head>
 
 <body data-bs-theme="dark">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Unit 731</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            The Journey
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chapter2.html">Chapter 1: Zhongma Fortress</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Why this site?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About & Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="p-5 mb-5 text-white" id="introJumbotron">
         <h1 id="pageTitle" class="jumbotronContent">Unit 731</h1>
         <p id="hookStatement" class="jumbotronContent">The most traumatising act of human experimentation in history</p>
@@ -96,16 +132,20 @@
 
     <div id="content">
         <div class="alert alert-warning" id="viewerAdvisoryAlert" role="alert">
-            <span>This informative website may contain textual and graphical content that may be disturbing to some viewers. Please continue at your own discretion.</span>
+            <span>This informative website may contain textual and graphical content that may be disturbing to some
+                viewers. Please continue at your own discretion.</span>
         </div>
         <br>
         <h1>Prologue</h1>
-        <p>During World War II, the Imperial Japanese Army set-up <span class="bolded">a covert biological and chemical warfare research and development (R&D) unit</span> in Manchuria.</p>
+        <p>During World War II, the Imperial Japanese Army set-up <span class="bolded">a covert biological and chemical
+                warfare research and development (R&D) unit</span> in Manchuria.</p>
         <p>
-            It was also involved in <span class="bolded">lethal human experimentation and the manufacture of biological weapons.</span> 
+            It was also involved in <span class="bolded">lethal human experimentation and the manufacture of biological
+                weapons.</span>
             As such, it is responsible for the most notorious war crimes committed by the Japanese armed forces.
         </p>
-        <p>An estimated <span class="bolded">200 to 300 thousand people were killed</span> as a result of the unit's activites, and no one came out alive.</p>
+        <p>An estimated <span class="bolded">200 to 300 thousand people were killed</span> as a result of the unit's
+            activites, and no one came out alive.</p>
         <br>
         <p>Some of the dehumanizing experiments conducted by people include:</p>
         <ol>
@@ -116,18 +156,23 @@
             <li style="list-style-type: none; padding-top: 5px;">&nbsp;&nbsp;&nbsp;and much much more...</li>
         </ol>
         <br>
-        <p>You will be surprised to find out about the double-edged outcome of the activities conducted by Unit 731.<br>Allow me to take you on a journey through the different stages of the unit and through the horrific activities that took place.</p>
+        <p>You will be surprised to find out about the double-edged outcome of the activities conducted by Unit
+            731.<br>Allow me to take you on a journey through the different stages of the unit and through the horrific
+            activities that took place.</p>
         <br>
         <br>
         <div id="continueButtonDiv">
             <a href="chapter2.html">
-                <button type="button" id="continueButton" class="btn btn-outline-primary bigger">Continue to <span class="bolded">Zhongma Fortress</span></button>
+                <button type="button" id="continueButton" class="btn btn-outline-primary bigger">Continue to <span
+                        class="bolded">Zhongma Fortress</span></button>
             </a>
         </div>
     </div>
 
     <script src="js/copyright.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 

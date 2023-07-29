@@ -1,0 +1,44 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+@keyframes fadeInWithTranslation {
+    from {
+        top: 25px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+#pageTitle {
+    font-weight: 900;
+    font-size: 7em;
+    padding-top: 10%
+}
+
+#hookStatement {
+    font-size: 2em;
+    padding-bottom: 10%
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.bigger {
+    font-size: large;
+}
+
+#continueButtonDiv {
+    text-align: center;
+}
+
+#continueButton {
+    padding: 10px;
+}

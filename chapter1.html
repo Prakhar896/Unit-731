@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 | Unit 731</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/base.css">
+    <style>
+        #pageTitle {
+            font-size: 5em;
+        }
+
+        #introduction {
+            animation: fadeInWithTranslation 3s;
+        }
+
+        #content {
+            font-size: larger;
+            padding-bottom: 150px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .contentSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sectionThumbnail {
+            transition-duration: 0.5s;
+        }
+
+        .sectionThumbnail:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Unit 731</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            The Journey
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chapter1.html">Chapter 1: Zhongma Fortress</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Why this site?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About & Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="introduction">
+        <h1 id="pageTitle">Zhongma Fortress</h1>
+        <p id="hookStatement">Where It All Began</p>
+    </div>
+
+    <br><br>
+
+    <div id="content">
+        <!-- <div id="invasionDiv" class="contentSection">
+            <p class="float-start">hello! This text should be floating on the left!</p>
+            <img src="img/zhongmaFortress.png" height="400px" class="rounded float-end">
+        </div> -->
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img class="rounded sectionThumbnail" src="img/genevaSwitzerlandFlagWithBg.jpeg" height="40%">
+                    <h6 class="caption"></h6>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <br>
+                    <h3 class="text-center">1930-1931</h3>
+                    <p>In 1925, the 1925 Geneva Protocol was introduced to ban the use of chemical and bacteriological (biological) weapons in war. To the Japanese military, this just proved the effectiveness of bio-weapons, leading them to set-up units dedicated towards researching such destructive weapons.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

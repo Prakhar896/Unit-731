@@ -36,6 +36,16 @@
         .sectionThumbnail:hover {
             transform: scale(1.1);
         }
+
+        .caption {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+
+        #victimsDiv {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     </style>
 </head>
 
@@ -60,6 +70,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="chapter1.html">Chapter 1: Zhongma Fortress</a></li>
+                            <li><a class="dropdown-item" href="chapter2.html">Chapter 2: Escape & Expansion</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -86,26 +97,69 @@
             <img src="img/zhongmaFortress.png" height="400px" class="rounded float-end">
         </div> -->
 
+        <!-- Geneva Protocol -->
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6">
                     <img class="rounded sectionThumbnail" src="img/genevaSwitzerlandFlagWithBg.jpeg" height="40%">
-                    <h6 class="caption"></h6>
+                    <br>
+                    <br>
+                    <h6 class="caption">Geneva, Switzerland</h6>
                 </div>
                 <div class="col-md-6">
-                    <br>
-                    <br>
                     <h3 class="text-center">1930-1931</h3>
                     <p>In 1925, the 1925 Geneva Protocol was introduced to ban the use of chemical and bacteriological (biological) weapons in war. To the Japanese military, this just proved the effectiveness of bio-weapons, leading them to set-up units dedicated towards researching such destructive weapons.</p>
+                    <p>On 18 September 1931, the Imperial Japanese Army invaded Manchuria. Since Manchuria was away from home and the test subjects (Chinese national) would be <em>"no-cost"</em>, it became the ideal location for research units.</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3 class="text-center">1932</h3>
+                    <p>Ater a 2-year study trip abroad, <span class="bolded">Surgeon General Ishii</span> saw that western powers were developing their own bio-weapon programs. Thus, <span class="bolded">he organized a secret research group</span>, called Unit Togo, as the commander of the Army Epidemic Prevention Research Lab (AEPRL).</p>
+                    <p>Unit Togo was set into motion in Zhongma Fortress, a prison and experimentation camp in a remote village, Beiyinhe, 100km south of Harbin, China.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="rounded sectionThumbnail" src="img/zhongmaFortress.png" height="300px">
+                    <br>
+                    <br>
+                    <h6 class="caption">A photograph of Zhongma Fortress in Beiyinhe</h6>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <div id="victimsDiv">
+            <h1>Who were the victims?</h1>
+            <img src="img/victimImage1.jpeg" class="rounded sectionThumbnail float-end">
+            <br>
+            <div id="victimsContent">
+                <p>At Zhongma, several groups of victims, some completely innocent, were tortured, experimented on and raped.</p>
+                <p>Victims include:</p>
+                <ol>
+                    <li>Common criminals and bandits</li>
+                    <li>Anti-Japanese partisans</li>
+                    <li>Political Prisoners</li>
+                    <li>People brought in on <span class="bolded">exaggerated charges</span> by the Kempeitati (Japanese military police)</li>
+                </ol>
+                <p>Prisoners were drained of blood and deprived of nutrients and water over several days as well.</p>
+            </div>
+        </div>
+        <br>
     </div>
 
+    <h3>And the atrocities only get worse; continue your journey to learn about the expansion.</h3>
+    <div id="continueButton">
+        <a href="chapter2.html"><button id="continueButton" class="btn btn-outline-primary">Continue to <strong>The Expansion</strong></button></a>
+    </div>
+
+    <br><br><br><br>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="js/copyright.js"></script>
 </body>
 
 </html>

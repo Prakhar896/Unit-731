@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape and Expansion | Unit 731</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <style>
+        #pageTitle {
+            font-size: 5em;
+        }
+
+        #introduction {
+            animation: fadeInWithTranslation 3s;
+        }
+
+        #content {
+            font-size: larger;
+            padding-bottom: 150px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .contentSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sectionThumbnail {
+            transition-duration: 0.5s;
+        }
+
+        .sectionThumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Unit 731</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            The Journey
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chapter1.html">Chapter 1: Zhongma Fortress</a></li>
+                            <li><a class="dropdown-item" href="chapter2.html">Chapter 2: Escape & Expansion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Why this site?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About & Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="introduction">
+        <h1 id="pageTitle">Escape and Expansion</h1>
+        <p id="hookStatement">The Unwarranted & Unwanted Publicity</p>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img class="rounded sectionThumbnail" src="img/victimImage2.jpeg" height="250px">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">1934: Prison Break</h3>
+                    <p>In August 1934, prisoners were given a ration of special foods on the occasion of the traditional summer festival. A prisoner managed to overpower the guard, free fellow prisoners and climb outside the walls. <span class="bolded">Most did not survive the escape attempt but a brave 16 managed to get away.</span></p>
+                    <p>Word spread about the ongoing crimes against humanity at Zhongma, forcing military authorities to close down Zhongma Fortress as secrecy had been jeopardized.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <div class="col">
+                    <p>Surgeon General Shiro Ishii's operation was transferred to a new, and larger, site closer to Harbin called Pingfang.<br>This new site is what has come to be known as <span class="bolded">Unit 731.</span></p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3 class="text-center">1936</h3>
+                    <p>Emperor Hirohito (reigning from 1926-1989 as a monarch in Japan) authorised the expansion of Unit 731. The unit was split up into two parts, Ishii (in Pingfang) and Wakamatsu (in Hsinking).</p>
+                    <p>From August 1940, the units were collectively labelled as the "Epidemic Prevention and Water Purification Department of the Kwantung Army".</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="rounded sectionThumbnail" src="img/shiroIshiiPortrait.jpeg" height="60%">
+                    <br>
+                    <br>
+                    <h6 class="caption">Surgeon General Shiro Ishii</h6>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

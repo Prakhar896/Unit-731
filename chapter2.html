@@ -20,7 +20,7 @@
         #content {
             font-size: larger;
             padding-bottom: 150px;
-            text-align: left;
+            text-align: center;
             margin: 20px;
         }
 
@@ -42,6 +42,19 @@
             font-size: 0.8em;
             opacity: 0.8;
         }
+
+        .carousel-inner > .carousel-item > img {
+            object-fit: contain;
+            height: 500px;
+        }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
     </style>
 </head>
 
@@ -108,6 +121,7 @@
             <br>
             <br>
             <br>
+            <br>
 
             <div class="row text-center">
                 <div class="col-md-6">
@@ -123,9 +137,67 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
+        <div id="atrocitiesDiv">
+            <h1>The Atrocities</h1>
+            <br>
+            <div id="photosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#photosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel4.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel5.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel6.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#photosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#photosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <br>
+            <br>
+            <p>At Unit 731, victims were subjected to constant experimentation, including disease injections of syphilis and gonorrhoea. Outright inhumane abuse such as rape and forced pregnancy became normalised.</p>
+            <p><span class="bolded">Human vivisection</span>, performing surgery and medical operations for experimental purposes on humans, was often performed without anesthesia, <span class="bolded">making it deadly</span>. Invasive surgery (mostly involving the removal of organs), limb amputation, and plague infection were regularly carried out to test the human body amongst the most extreme medical parameters.</span></p>
+            <br>
+            <br>
+            <br>
+            <blockquote id="quote">
+                <p><span class="bolded" style="font-size: larger;">‟ </span>Some of the experiments had nothing to do with advancing the capability of germ warfare, or of medicine. There is such a thing as professional curiosity...That was just playing around. Professional people, too, like to play.<span class="bolded" style="font-size: larger;"> ”</span></p>
+                <footer class="caption">- Nakagawa Yonezo, a professor emeritus who studied at <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a> during the war.</footer>
+            </blockquote>
+            <br>
+            <br>
+        </div>
+    </div>
+    <br>
+
+    <h3>Continue your journey to find out how the horror came to a close.</h3>
+    <div id="continueButton">
+        <a href="chapter3.html"><button id="continueButton" class="btn btn-outline-primary">Continue to <strong>The End & Epilogue</strong></button></a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

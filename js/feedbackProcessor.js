@@ -20,10 +20,16 @@ function submitData() {
         data: data
     })
     .then(response => {
-        location.href = `${location.origin}/submitted.html?name=${senderName}`
+        var newPath = location.pathname.split("/")
+        newPath.pop(newPath.length)
+        newPath.push(`submitted.html?name=${senderName}`)
+        location.href = location.origin + newPath.join("/")
     })
     .catch(error => {
-        location.href = `${location.origin}/submitted.html?name=${senderName}`
+        var newPath = location.pathname.split("/")
+        newPath.pop(newPath.length)
+        newPath.push(`submitted.html?name=${senderName}`)
+        location.href = location.origin + newPath.join("/")
     })
     formDiv.innerHTML = `<p><strong>Thanks for submitting, ${senderName}!</strong></p>`
 }

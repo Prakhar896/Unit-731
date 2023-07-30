@@ -4,18 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEMPLATE HTML FILE TITLE</title>
+    <title>The End and Epilogue | Unit 731</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/base.css">
+
+    <style>
+        #pageTitle {
+            font-size: 5em;
+        }
+
+        #introduction {
+            animation: fadeInWithTranslation 3s;
+        }
+
+        #introJumbotron {
+            background-image: url('img/atomicBombLanding.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .jumbotronContent {
+            text-shadow: 2px 2px 4px #000000;
+            opacity: 1;
+            animation: fadeInWithTranslation 3s;
+            position: relative;
+        }
+        
+        #content {
+            font-size: larger;
+            padding-bottom: 150px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .contentSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sectionThumbnail {
+            transition-duration: 0.5s;
+        }
+
+        .sectionThumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body data-bs-theme="dark">
-    <p>TEMPLATE HTML FILE</p>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Unit 731</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            The Journey
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chapter1.html">Chapter 1: Zhongma Fortress</a></li>
+                            <li><a class="dropdown-item" href="chapter2.html">Chapter 2: Escape & Expansion</a></li>
+                            <li><a class="dropdown-item" href="chapter3.html">Chapter 3: The End & Epilogue</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why.html">Why this site?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About & Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <div class="p-5 mb-5 text-white" id="introJumbotron">
+        <h1 id="pageTitle" class="jumbotronContent">The End and Epilogue</h1>
+        <p id="hookStatement" class="jumbotronContent">The evil comes to a relieving end</p>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <br>
+    <br>
+    <br>
+
+    <div id="content">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img class="rounded sectionThumbnail" src="img/emperorOfJapan.jpeg" height="500px">
+                    <br>
+                    <br>
+                    <h6 class="caption">Emperor Hirohito of Japan</h6>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">1945</h3>
+                    <p>On the 6th of August 1945, the United States, upon order of the 33rd President Harry S. Truman, dropped the infamous atomic bomb called Little Boy on the city of Hiroshima. It was used to end the war and proved incredibly effective.</p>
+                    <p>As the Red Army (the army of the Soviet Union) came in August 1945, Ministries in Tokyo ordered the unit to erase all evidence of it's operations. 300 remaining prisoners, who could've stood as witness, were gassed or killed using Potassium Cyanide, a deadly chemical. More than 600 Chinese and Manchurian labourers were shot dead.</p>
+                    <br>
+                    <h4 class="bolded">None of the prisoners came out alive.</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>On the flip side...</h2>
+        <p>All of the medical research and experimentation has brought about unexpected health benefits. The United States struct a deal with physicians of the Unit 731; they were given immunity in exchange for providing America, and America alone, with their research and data. The US concealed this information and have never revealed it.</p>
+        <p>Most recently, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8141376/">a paper was published</a> which suggested that Unit 731 data could be applied to COVID-19 vaccine research and research on any future pandemics. This is especially so as a lot of the experimentation in Unit 731 revolved around disease injections and spread monitoring.</p>
+        <br>
+        <p>So, it's true. <strong><em>Everything</em> really does have its pros and cons. Interesting, isn't it?</strong></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>The End</h1>
+        <br>
+        <br>
+        <p>Liked your journey? <a href="aboutme.html">Learn more about me, the author, and drop some feedback!</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/copyright.js"></script>
 </body>
 
 </html>
